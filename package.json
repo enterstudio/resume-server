@@ -42,7 +42,7 @@
     "resume-to-markdown": "0.0.14",
     "resume-to-text": "0.0.15",
     "sha256": "^0.2.0",
-    "superagent": "^2.0"
+    "superagent": "^3.8.1"
   },
   "devDependencies": {
     "chai": "^3.3.0",
