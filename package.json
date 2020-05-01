@@ -7,7 +7,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "NODE_ENV=test node node_modules/mocha/bin/mocha test/**/*.js"
+    "test": "NODE_ENV=test node node_modules/mocha/bin/mocha test/**/*.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -42,7 +44,8 @@
     "resume-to-markdown": "0.0.14",
     "resume-to-text": "0.0.15",
     "sha256": "^0.2.0",
-    "superagent": "^2.0"
+    "superagent": "^2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^3.3.0",
@@ -53,5 +56,6 @@
     "should": "^9.0.2",
     "supertest": "^1.1",
     "supertest-as-promised": "^3.1.0"
-  }
+  },
+  "snyk": true
 }
